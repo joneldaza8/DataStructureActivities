@@ -22,6 +22,7 @@ namespace Week1
         /// <returns></returns>
         public static int AddDigits(int n)
         {
+          
             var digits = n.ToString().ToCharArray();
 
             int sum = 0;
