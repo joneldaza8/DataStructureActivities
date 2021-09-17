@@ -41,5 +41,14 @@ namespace Week2.Test
             int mode = BasicStatistics.GetMode(n);
             Assert.AreEqual(expectedMode, mode);
         }
+
+        [DataTestMethod]
+        [DataRow(new int[] { 87, 67, 43, 45, 67, 34, 89, 54, 87, 67 }, 89)]
+        [DataRow(new int[] { 92, 90, 84, 75, 68, 34, 56, 87, 44, 56, 92, 90, 91, 90, 88 }, 92)]
+        public void TestGetMaxValue(int[] n, int expectedMode)
+        {
+            int mode = BasicStatistics.GetMaxValue(n);
+            Assert.AreEqual(expectedMode, mode);
+        }
     }
 }

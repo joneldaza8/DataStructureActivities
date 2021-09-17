@@ -28,6 +28,13 @@ namespace Week2
             return 0;
         }
 
+        public static int GetMedian(int[] n)
+        {
+            // todo: do your magic here! :)
+
+            return 0;
+        }
+
         public static int GetMode(int[] n)
         {
             // todo: do your magic here! :)
@@ -36,7 +43,7 @@ namespace Week2
 
         }
 
-        public static int GetMedian(int[] n)
+        public static int GetMaxValue(int[] n)
         {
             // todo: do your magic here! :)
 
