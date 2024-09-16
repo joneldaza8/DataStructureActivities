@@ -10,7 +10,7 @@ namespace Week1.Test
         [DataRow(123,6)]
         [DataRow(527,14)]
         [DataRow(123456,21)]
-        public void AddDigits_CheckIfSum_Correct(int n, int expectedSum)
+        public void TestAddDigits(int n, int expectedSum)
         {
             Assert.AreEqual(expectedSum, Digits.AddDigits(n));
         }
@@ -20,7 +20,7 @@ namespace Week1.Test
         [DataRow(3, 999)]
         [DataRow(4, 9999)]
         [DataRow(5, 99999)]
-        public void LargestNumber_Check_If_Correct(int n, int expectedResult)
+        public void TestLargestNumber(int n, int expectedResult)
         {
             Assert.AreEqual(expectedResult, Digits.LargestNumber(n));
         }
@@ -31,7 +31,7 @@ namespace Week1.Test
         [DataRow(10, 5, 0)]
         [DataRow(4, 4, 4)]
         [DataRow(4, 15, 12)]
-        public void OptimalEqualSplit_Check_If_Correct(int n, int m, int expectedResult)
+        public void TestOptimalEqualSplit(int n, int m, int expectedResult)
         {
             Assert.AreEqual(expectedResult, Digits.OptimalEqualSplit(n,m));
         }
@@ -41,7 +41,7 @@ namespace Week1.Test
         [DataRow(4, 0)]
         [DataRow(25,2)]
         [DataRow(999, 4)]
-        public void Persistence_Check_If_Correct(int n, int expectedResult)
+        public void TestPersistence(int n, int expectedResult)
         {
             Assert.AreEqual(expectedResult, Digits.Persistence(n));
         }
